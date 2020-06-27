@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="apli.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+</head>
+<body>
+	<div id="content">
+		<div id="company_bar">
+			<img id="company_logo" src="https://www.freelogoservices.com/blog/wp-content/uploads/transparent-logo.jpg">
+			<span id="company_name">Company</span>
+		</div>
+		<div class="row">
+			<div class="col-lg-5">
+				<img id="candidate_picture" src="https://image.shutterstock.com/image-vector/social-media-avatar-user-icon-260nw-1061793911.jpg">
+				<h2 id="candidateName">Candidate</h2> <br><br>
+				<canvas id="radarChart"></canvas>
+			</div>
+			<div class="col-lg-7">
+				<h2><span id="previous">< </span><span id="questionArray">Question 1</span><span id="next"> ></span></h2><br>
+				<div class="row">
+					<div class="col-lg-6">
+						<iframe src="https://www.youtube.com/embed/fJ9rUzIMcZQ" height="220px" frameborder="0" id="answer"></iframe>
+						<input type="text" class="form-control" placeholder="comment" id="comments">
+					</div>
+					<div class="=col-lg-6">
+						<h3 id="gradeHead">Grading</h3><br>
+						<input type="radio" id="button1" value="1" class="radioButton" name="gradingButton">
+						<label for='button1' class="labels">1</label>
+						<input type="radio" id="button2" value="2" class="radioButton" name="gradingButton">
+						<label for='button2' class="labels">2</label> <br> <br>
+						<input type="radio" id="button3" value="3" class="radioButton" name="gradingButton">
+						<label for='button3' class="labels">3</label>
+						<input type="radio" id="button4" value="4" class="radioButton" name="gradingButton">
+						<label for='button4' class="labels">4</label> <br> <br>
+						<input type="radio" id="button5" value="5" class="radioButton" name="gradingButton">
+						<label for='button5' class="labels">5</label>
+					</div>
+				</div>
+				<button id="save" class="btn btn-lg btn-primary"><a id="resultLink">Save</a></button>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script type="text/javascript" src="apli.js"></script>
+	<script type="text/javascript" src="radar-chart.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
